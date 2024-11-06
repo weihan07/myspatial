@@ -1,13 +1,8 @@
 /* Custom styles */
-
-/*=============== GOOGLE FONTS ===============*/
-
 /*=============== BASE ===============*/
 body, html {
     overflow-x: hidden;
 }
-
-/*=============== HEADER ===============*/
 
 
 /*=============== NAV ===============*/
@@ -89,9 +84,6 @@ html {
 }
 
 
-/*=============== BUTTONS ===============*/
-
-
 /*=============== ABOUT ===============*/
 table {
     width: 100%;
@@ -146,6 +138,7 @@ td {
     color: black;
     margin-top: 10px;
 }
+
 
 /*=============== DISCOVER ===============*/
 /* Set the container to a 3x3 grid */
@@ -255,5 +248,3 @@ td {
 .social-icon:hover i {
     color: #007bff; /* Blue color */
 }
-
-/*========== SCROLL UP ==========*/
