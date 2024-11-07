@@ -58,7 +58,7 @@ html {
     left: 0; /* Align to the left */
     right: 0; /* Align to the right */
     bottom: 0; /* Stretch to the bottom */
-    background: url('https://img.freepik.com/free-photo/oil-palm-plantation_1373-514.jpg?t=st=1730782781~exp=1730786381~hmac=456f2e903c6a219299a63a2015f4a7d27dad87e3f8757fe064476adeb09e7a2c&w=996') center / cover no-repeat; /* Set your background image */
+    background: url('https://github.com/weihan07/myspatial/blob/main/image/extend_sphere.jpg?raw=true') center / cover no-repeat; /* Set your background image */
     opacity: 0.5; /* Set the desired opacity */
     z-index: 1; /* Position behind text */
 }
