@@ -17,56 +17,78 @@
     </head>
     
     <body>
-        <!--=============== Navbar ===============-->
-            <nav class="navbar navbar-expand-lg navbar-dark bg-orange fixed-top">
-                <a class="navbar-brand" href="#"><strong>KOPERASI PERMODALAN FELDA (KPF)            </strong></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item"><a class="nav-link" href="#home"><strong>HOME</strong></a></li>
-                        <li class="nav-item"><a class="nav-link" href="#about"><strong>PROJECTS</strong></a></li>
-                        <li class="nav-item"><a class="nav-link" href="#discover"><strong>DISCOVER</strong></a></li>
-                        <li class="nav-item"><button class="btn nav-link" onclick="window.location.href='https://thpegis.com.my';"><strong>DASHBOARD</strong></button></li>
-                    </ul>
-                </div>
-            </nav>
-        
         <!--=============== Home Section ===============-->
-        <section id="home" class="container">
-            <div>
-                <div class="container">
-                    <div class="row mt-4 text-center">
-                        <div class="col-md-2 d-flex align-items-center"  style="padding-right: 50px;">
-                            <img src = "https://github.com/weihan07/myspatial/blob/main/image/LOGO_KPF.png?raw=true" alt="KPF Logo" class="logo-img mr-2" width="100" height="100" style="margin-bottom: 15px;">
+        <!--==================== Header ====================-->
+        <section class="container-fluid" style="background-color: #bfbfbf;">
+            <div class="row">
+                <!--========== KPF Logo ==========-->
+                <div class="col-sm-3 d-flex align-items-center justify-content-center">
+                    <div class="KPF_Logo">
+                        <img src="https://github.com/weihan07/myspatial/blob/main/image/LOGO_KPF.png?raw=true" 
+                            alt="KPF Logo" 
+                            class="logo-img mr-2" 
+                            width="100" 
+                            height="100" 
+                            >
+                    </div>
+                </div>
+                
+
+                <!--========== List ==========-->
+                <div class="col-sm-3 d-flex align-items-center justify-content-center">
+                    <div class="d-flex align-items-center mt-3">
+                        <i class="ri-map-pin-fill" style="font-size: 30px; margin-bottom: 10px;"></i>
+                        <div class="ml-2">
+                            <h6 style="text-align: left;">Ladang KPF (Aring, Blau, Galas), <br> Gua Musang, Kelantan.</h6>
+                            <p style="text-align: left; font-size: 12px;">Jalan Gurney 1, Kampung Datuk Keramat, <br> 54000 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur.</p>
                         </div>
-                        <div class="col-md-5 d-flex align-items-center">
-                            <i class="ri-map-pin-fill" style="font-size: 30px; margin-bottom: 10px;"></i>
-                            <div class="ml-2">
-                                <h6 style="text-align: left;">Ladang KPF (Aring, Blau, Galas), <br> Gua Musang, Kelantan</h6>
-                                <p style="text-align: left; font-size: 13.5px;">Jalan Gurney 1, Kampung Datuk Keramat, <br> 54000 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur.</p>
-                            </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-3 d-flex align-items-center justify-content-center">
+                    <div class="d-flex align-items-center">
+                        <i class="ri-phone-fill" style="font-size: 30px; margin-bottom: 10px;"></i>
+                        <div class="ml-2">
+                            <h6>Phone Number:</h6>
+                            <p style="font-size: 13.5px;">+03-2694-2095</p>
                         </div>
-                        <div class="col-md-3 d-flex align-items-center">
-                            <i class="ri-phone-fill" style="font-size: 30px; margin-bottom: 10px;"></i>
-                            <div class="ml-2">
-                                <h6>Phone Number:</h6>
-                                <p style="font-size: 13.5px;">+03-2694-2095</p>
-                            </div>
-                        </div>
-                        <div class="col-md-2 d-flex align-items-center">
-                            <i class="ri-mail-fill" style="font-size: 30px; margin-bottom: 10px;"></i>
-                            <div class="ml-2">
-                                <h6>Email:</h6>
-                                <p style="font-size: 13.5px;">info@myspatial.com</p>
-                            </div>
+                    </div>
+                </div>
+                
+                <div class="col-sm-3 d-flex align-items-center justify-content-center">
+                    <div class="d-flex align-items-center">
+                        <i class="ri-mail-fill" style="font-size: 30px; margin-bottom: 10px;"></i>
+                        <div class="ml-2">
+                            <h6>Email:</h6>
+                            <p style="font-size: 13.5px;">info@myspatial.com</p>
                         </div>
                     </div>
                 </div>
             </div>
+            
+            
         </section>
+
+
+        <!--==================== Navigation bar ====================-->
+        <nav class="navbar navbar-expand-lg bg-orange sticky-top">
+            <!--========== Navigation title ==========-->
+            <a class="navbar_title" href="#"><strong>KOPERASI PERMODALAN FELDA (KPF)</strong></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!--========== Navigation list ==========-->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home"><strong>HOME</strong></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#project"><strong>PROJECT</strong></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#discover"><strong>DISCOVER</strong></a></li>
+                    <li class="nav-item"><button class="btn nav-link" onclick="window.location.href='https://thpegis.com.my'"><strong>DASHBOARD</strong></button></li>
+                </ul>                    
+            </div>
+        </nav>
+
         <section id="belowhome" class="py-5">
             <div class="container">
                 <div class="row align-items-center">
