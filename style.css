@@ -102,13 +102,13 @@ td {
 .feature-box {
     background-color: #dd7009;
     text-align: center;
-    padding: 50px 45px;
+    padding: 20px 45px;
 }
 
 .feature-box1 {
     background-color: #999898;
     text-align: center;
-    padding: 50px 45px;
+    padding: 20px 45px;
 }
 
 .container1 {
@@ -190,14 +190,14 @@ td {
 .footer {
     background: #dd7009;
     color: white;
-    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 3px;
     text-align: center;
 }
 
 .footer__social {
     font-size: 1.5rem;
     color: white;
-    margin: 0 10px;
 }
 
 .footer__terms-link {
@@ -215,17 +215,12 @@ td {
     font-family: 'Lucida Sans';
 }
 
-.col-md-10 i {
-    padding-right: 20px;
-}
-
 .footer__container {
     position: relative;
 }
 
 .footer__images {
     align-self: flex-end; /* Positions images at the bottom */
-    margin-bottom: 20px; /* Adjust spacing from the bottom */
 }
 
 .footer__data p:hover,
