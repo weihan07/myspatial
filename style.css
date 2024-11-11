@@ -187,17 +187,34 @@ td {
 
 
 /*=============== FOOTER ===============*/
-.footer {
+.footer__container {
     background: #dd7009;
-    color: white;
-    padding-top: 10px;
-    padding-bottom: 3px;
-    text-align: center;
+    min-height: 300px; /* Adjust to fit your layout */
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.link {
+    margin-top: auto; /* Push the links to the bottom */
+    padding-top: 20px;
 }
 
 .footer__social {
     font-size: 1.5rem;
     color: white;
+}
+
+/*===== company link =====*/
+.link {
+    padding: 3px;
+}
+
+.link_social a {
+    margin: 0 10px; /* Space between icons */
+    font-size: 36px; /* Adjust icon size */
+    color: #333; /* Default icon color */
+    transition: color 0.3s ease; /* Smooth color transition */
 }
 
 .footer__terms-link {
@@ -239,4 +256,8 @@ td {
 /* Hover effect: change icon color to blue */
 .social-icon:hover i {
     color: #007bff; /* Blue color */
+}
+
+.copyrights {
+    color: white;
 }
