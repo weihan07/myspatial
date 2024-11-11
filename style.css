@@ -1,25 +1,22 @@
 /* Custom styles */
 /*=============== BASE ===============*/
-body, html {
+html {
     overflow-x: hidden;
 }
 
 
 /*=============== NAV ===============*/
+.navbar_title {
+    font-size: 20px;
+    color: white !important;
+}
+
 .bg-orange {
-    background-color: #DD7009;
+    background-color: #dd7009;
 }
 
-.navbar-dark .navbar-nav .nav-link {
+.nav-link {
     color: white !important;
-}
-
-.navbar-dark .navbar-brand {
-    color: white !important;
-}
-
-.navbar-dark .navbar-nav .nav-link:hover {
-    color: #f0f0f0 !important; /* Lighter shade of white */
 }
 
 html {
