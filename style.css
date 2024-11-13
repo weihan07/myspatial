@@ -2,7 +2,13 @@
 /*=============== BASE ===============*/
 html {
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
+
+.header {
+    background-color: #bfbfbf;
+}
+
 
 
 /*=============== NAV ===============*/
@@ -19,10 +25,6 @@ html {
     color: white !important;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 .btn :hover {
     color: #007bff; /* Blue color */
 }
@@ -34,110 +36,122 @@ html {
 }
 
 
+
 /*=============== HOME ===============*/
+/* setting for background img*/
 .home {
-    background: url('https://th.bing.com/th/id/OIP.lwB-FrLJRzlPNR9-ZRsSQwHaE6?w=910&h=604&rs=1&pid=ImgDetMain') center center / cover no-repeat;
-    color: white;
-    padding: 100px 0;
-    text-align: center;
+    position: relative; /* Ensure positioning for overlay */
 }
 
-#belowhome {
-    position: relative; /* Set position to relative */
-    padding: 100px 75px; /* Adjust padding as needed */
-    color: black; /* Ensure text color is white */
-}
-
-#belowhome::before {
+/* setting for background img*/
+.home::before {
     content: ''; /* Necessary for pseudo-element */
     position: absolute; /* Position it absolutely */
     top: 0; /* Align to the top */
     left: 0; /* Align to the left */
-    right: 0; /* Align to the right */
-    bottom: 0; /* Stretch to the bottom */
-    background: url('https://github.com/weihan07/myspatial/blob/main/image/extend_sphere.jpg?raw=true') center / cover no-repeat; /* Set your background image */
+    width: 100%;
+    height: 100%;
+    background: url('https://github.com/weihan07/myspatial/blob/main/image/extend_sphere.jpg?raw=true') center / cover no-repeat;
     opacity: 0.5; /* Set the desired opacity */
-    z-index: 1; /* Position behind text */
+    z-index: -1; /* Position behind text */
 }
 
-#belowhome > * {
-    position: relative; /* Set position to relative to ensure text is above pseudo-element */
-    z-index: 2; /* Position above the background */
+.home p {
+    text-align: justify;
+    font-size: 20px;
+    color: #585858;
 }
 
-#home {
-    padding-top: 50px; /* Adjust as needed to match the navbar height */
-}
-
-.uav {
-    width: 100%;
-    height: 350px;
-    padding-right: 100px;
-}
-
-.uav1 {
-    width: 100%;
-    height: auto;
-}
-
-
-/*=============== ABOUT ===============*/
-table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-td {
-    text-align: left;
-    padding: 8px;
-    vertical-align: middle;
-}
-
-.section-title {
-    font-size: 2rem;
-    margin: 50px 0 20px;
-    color: black;
+/*===== Bar =====*/
+.container1 {
+    background-color: #dd7009;
 }
 
 .feature-box {
     background-color: #dd7009;
     text-align: center;
-    padding: 20px 45px;
+    padding: 20px;
 }
 
 .feature-box1 {
-    background-color: #999898;
+    background-color: #bfbfbf;
     text-align: center;
-    padding: 20px 45px;
-}
-
-.container1 {
-    background-color: #dd7009;
+    padding: 20px;
 }
 
 .feature-box i {
-    padding-right: 15px;
-    font-size: 2rem;
+    margin-right: 10px;
+    font-size: 25px;
     color: black;
 }
 
 .feature-box1 i {
-    padding-right: 15px;
-    font-size: 2rem;
+    margin-right: 10px;
+    font-size: 25px;
     color: white;
 }
 
 .feature-box h3 {
-    margin-top: 10px;
+    font-size: 25px;
+    margin: 0;
 }
 
 .feature-box1 h3 {
     color: black;
-    margin-top: 10px;
+    font-size: 25px;
+    margin: 0;
 }
 
 
+
+/*=============== ABOUT ===============*/
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    margin: 50px 0 20px;
+    color: black;
+}
+
+.col-md-6 p {
+    font-size: 20px;
+    text-align: justify;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table td {
+    text-align: left;
+    padding: 8px;
+    vertical-align: middle;
+}
+
+.table i {
+    font-size: 20px;
+}
+
+
+
 /*=============== DISCOVER ===============*/
+.container2 {
+    background-color: #e7e4e4;
+    padding-bottom: 10px;
+}
+
+/* Center the titles */
+.section__title1 {
+    padding-top: 50px;
+    text-align: center;
+}
+
+.image__title {
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
 /* Set the container to a 3x3 grid */
 .discover__container {
     display: grid;
@@ -166,24 +180,12 @@ td {
     transform: scale(1.1); /* Slight zoom on hover */
 }
 
-/* Center the titles */
-.section__title1 {
-    padding-top: 25px;
+.video_title {
     text-align: center;
+    margin-top: 50px;
+    margin-bottom: 25px;
 }
 
-.section__title {
-    padding: 25px;
-}
-
-.video {
-    text-align: center;
-}
-
-.container2 {
-    background-color: #e7e4e4;
-    padding-bottom: 10px;
-}
 
 
 /*=============== FOOTER ===============*/
@@ -195,19 +197,22 @@ td {
     flex-direction: column;
 }
 
-.link {
-    margin-top: auto; /* Push the links to the bottom */
-    padding-top: 20px;
-}
-
-.footer__social {
-    font-size: 1.5rem;
+.col-8 i {
+    font-size: 30px;
+    margin-right: 10px;
+    margin-bottom: 10px;
     color: white;
 }
 
-/*===== company link =====*/
-.link {
-    padding: 3px;
+/*===== Company Link =====*/
+.contact_info {
+    color:#373737;
+}
+
+.link_social {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding-top: 0px;
 }
 
 .link_social a {
@@ -217,21 +222,17 @@ td {
     transition: color 0.3s ease; /* Smooth color transition */
 }
 
-.contact_info {
-    color:#373737;
+.link i {
+    color: white;
+    font-size: 30px;
 }
 
-.footer__terms-link {
-    color: #fff;
-    text-decoration: none;
-    margin-right: 10px;
+.link p {
+    font-size: 12px;
+    margin: 0;
 }
 
-.footer__terms-link:hover {
-    text-decoration: underline;
-}
-
-.footer__title {
+.contact_title {
     color: black;
     font-family: 'Lucida Sans';
 }
@@ -240,25 +241,15 @@ td {
     position: relative;
 }
 
-.footer__images {
-    align-self: flex-end; /* Positions images at the bottom */
-}
-
-.footer__data p:hover,
-.footer__data p:hover strong {
-    color: lightsalmon; /* Change to the color you want for the hover effect */
-    transition: color 0.3s ease; /* Smooth transition effect */
-}
-
 /* Default icon color */
-.social-icon i {
+.col-8 i {
     color: white; /* White by default */
     font-size: 30px; /* Adjust the size as needed */
     transition: color 0.3s ease; /* Smooth transition for color change */
 }
 
 /* Hover effect: change icon color to blue */
-.social-icon:hover i {
+.col-8:hover i {
     color: #007bff; /* Blue color */
 }
 
