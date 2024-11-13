@@ -19,7 +19,7 @@
     <body>
         <!--=============== Home Section ===============-->
         <!--==================== Header ====================-->
-        <section class="container-fluid" style="background-color: #bfbfbf;">
+        <section class="header container-fluid">
             <div class="row">
                 <!--========== KPF Logo ==========-->
                 <div class="col-sm-3 d-flex align-items-center justify-content-center">
@@ -27,9 +27,8 @@
                         <img src="https://github.com/weihan07/myspatial/blob/main/image/LOGO_KPF.png?raw=true" 
                             alt="KPF Logo" 
                             class="logo-img mr-2" 
-                            width="100" 
-                            height="100" 
-                            >
+                            width="85" 
+                            height="85">
                     </div>
                 </div>
                 
@@ -65,8 +64,6 @@
                     </div>
                 </div>
             </div>
-            
-            
         </section>
 
 
@@ -89,38 +86,41 @@
             </div>
         </nav>
 
-        <section id="belowhome" class="py-5">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-md-6 text-center">
+        <!--==================== Home Section ====================-->
+        <section>
+            <div class="home">
+                <div class="row">
+                    <div class="col-6">
                         <img src="https://www.seilergeodrones.com/wp-content/uploads/sites/10/2022/03/F90___R6___20200318.180.png" 
-                             alt="UAV" 
-                             class="uav img-fluid">
+                             alt="Trinity" 
+                             class="Trinity img-fluid">
                     </div>
-                    <div class="col-md-6">
-                        <h1>Digital Precision Agriculture</h1>
-                        <p style="font-size: 20px; text-align: justify; color: #585858;"><strong>Data Collection, Analyzing, and Checking related to Digital Mapping through UAV Image Observation for 
+                    <div class="col-6 d-flex flex-column justify-content-center">
+                        <h1 style="padding-right: 100px;">Digital Precision Agriculture</h1>
+                        <p style="padding-right: 100px;"><strong>Data Collection, Analyzing, and Checking related to Digital Mapping through UAV Image Observation for 
                             Ladang KPF Aring, Ladang KPF Blau, and Ladang KPF Galas in Gua Musang, Kelantan.</strong></p>
                     </div>
                 </div>
             </div>
         </section>
+
+        <!--===== Bar Section =====-->
         <section>
-            <div class="container1">
+            <div class="container1 container-fluid">
                 <div class="row">
-                    <div class="feature-box d-flex">
+                    <div class="col feature-box d-flex align-items-center justify-content-center">
                         <i class="ri-thumb-up-line"></i>
                         <h3>Precision Farming</h3>
                     </div>
-                    <div class="feature-box d-flex">
+                    <div class="col feature-box d-flex align-items-center justify-content-center">
                         <i class="ri-thumb-up-line"></i>
                         <h3>Remote Sensing</h3>
                     </div>
-                    <div class="feature-box1 d-flex">
+                    <div class="col feature-box1 d-flex align-items-center justify-content-center">
                         <i class="ri-thumb-up-line"></i>
                         <h3>Geospatial Technology</h3>
                     </div>
-                    <div class="feature-box1 d-flex">
+                    <div class="col feature-box1 d-flex align-items-center justify-content-center">
                         <i class="ri-thumb-up-line"></i>
                         <h3>Data Analytics</h3>
                     </div>
@@ -129,9 +129,9 @@
         </section>
 
         <!--=============== About Section ===============-->
-        <section id="about" class="bg-light py-5">
+        <section id="about">
             <div class="container">
-                <div class="row align-items-center">
+                <div class="row align-items-center mt-3 mb-3">
                     <!-- Left Column: Image -->
                     <div class="col-md-6 text-center">
                         <video src="https://raw.githubusercontent.com/weihan07/myspatial/main/image/video5.mp4" 
@@ -144,18 +144,18 @@
                     
                     <!-- Right Column: Text and Table -->
                     <div class="col-md-6" style="padding-bottom: 30px;">
-                        <h2 class="section-title text-center">About Project</h2>
-                        <p style="font-size: 20px; text-align: justify;">"Drone Mapping Service for Tree Counting Analysis" for Ladang KPF Aring, Ladang KPF Blau, and Ladang KPF Galas, Gua Musang, Kelantan.</p>
+                        <h1 class="section-title">About Project</h1>
+                        <p>"Drone Mapping Service for Tree Counting Analysis" for Ladang KPF Aring, Ladang KPF Blau, and Ladang KPF Galas, Gua Musang, Kelantan.</p>
         
                         <div class="table-responsive text-center">
                             <table class="table mx-auto">
                                 <tr>
-                                    <td><i class="ri-plane-line" style="font-size: 20px;"></i> Drone Mapping</td>
-                                    <td><i class="ri-bar-chart-grouped-line" style="font-size: 20px;"></i> Inventory Mapping & Analysis</td>
+                                    <td><i class="ri-plane-line"></i> Drone Mapping</td>
+                                    <td><i class="ri-bar-chart-grouped-line"></i> Inventory Mapping & Analysis</td>
                                 </tr>
                                 <tr>
-                                    <td><i class="ri-global-fill" style="font-size: 20px;"></i> 360 Degree Panoramic View</td>
-                                    <td><i class="ri-cellphone-fill" style="font-size: 20px;"></i> GIS Web Mapping</td>
+                                    <td><i class="ri-global-fill"></i> 360 Degree Panoramic View</td>
+                                    <td><i class="ri-cellphone-fill"></i> GIS Web Mapping</td>
                                 </tr>
                             </table>
                         </div>
@@ -165,12 +165,12 @@
         </section>
         
         <!--=============== Discover Section ===============-->
-        <section id="discover" class="container2 py-5">
+        <section id="discover" class="container2">
             <div class="container">
-                <h2 class="section__title1 text-center">Discover</h2>
+                <h1 class="section__title1">Discover</h1>
                 
                 <!-- Image Section -->
-                <h3 class="section__title text-left">Image</h3>
+                <h3 class="image__title">Image</h3>
                 <div class="discover__container grid row">
                     <div class="image__card">
                         <img src="https://github.com/weihan07/myspatial/blob/main/image/1.jpg?raw=true" alt="" class="discover__image img-fluid">
@@ -202,7 +202,7 @@
                 </div>
                 
                 <!--========== Video ==========-->
-                <h3 class="video_title text-left mt-5">Video</h3>
+                <h3 class="video_title">Video</h3>
                 <div class="d-flex justify-content-center">
                     <video src="https://raw.githubusercontent.com/weihan07/myspatial/761146707890d28fac309d1b131907caed02ffae/image/video.mp4" 
                             class="img-fluid" 
@@ -251,31 +251,32 @@
                 <!--========== info ==========-->
                 <div class="info_container d-flex align-items-center mb-0">
                     <!--========== company logo ==========-->
-                    <div class="col-4 d-flex justify-content-center align-items-center">
+                    <div class="col-4 d-flex justify-content-center">
                         <img src="https://github.com/weihan07/myspatial/blob/main/image/LOGO_KPF.png?raw=true" 
                             alt="KPF Logo" 
-                            class="logo_img ml-5 mr-5"
-                            height="150"
-                            width="150">
+                            class="kpf_img"
+                            style="align-items: end;"
+                            height="125"
+                            width="125">
                         <img src="https://github.com/weihan07/myspatial/blob/main/image/LOGO_MYSPATIAL.png?raw=true"
                             alt="MySpatial Logo" 
-                            class="logo-img"
-                            height="150"
-                            width="150">
+                            class="myspatial ml-5"
+                            height="125"
+                            width="125">
                     </div>
 
-                    <!--========== contact info ==========-->
+                    <!--========== Contact Info ==========-->
                     <div class="col-8 justify-content-center">
                         <div class="row">
                             <!--===== Address =====-->
                             <div class="col d-flex align-items-center mb-1 ml-5 mb-0">
-                                <i class="ri-map-pin-fill" style="font-size: 30px; margin-right: 10px; margin-bottom: 10px;  color: white;"></i>
+                                <i class="ri-map-pin-fill"></i>
                                 <p class="contact_info mb-0"><strong>Level 1, Co9P Idea Tower 1,<br> UPM-MTDC Technology Centre, <br> Universiti Putra Malaysia, <br> 43400 Serdang, Selangor Darul Ehsan.</strong></p>
                             </div>
                             
                             <!--===== Phone num =====-->
                             <div class="col d-flex align-items-center mb-1 ml-5">
-                                <i class="ri-phone-fill" style="font-size: 30px; margin-right: 10px; margin-bottom: 10px; color: white;"></i>
+                                <i class="ri-phone-fill"></i>
                                 <p class="contact_info"><strong>013 356 5626 (WhatsApp) <br> 03 8959 3776 (Office)</strong></p>
                             </div>
 
@@ -283,13 +284,13 @@
 
                             <!--===== Email =====-->
                             <div class="col d-flex align-items-center mb-0 ml-5">
-                                <i class="ri-mail-fill" style="font-size: 30px; margin-right: 10px; margin-bottom: 0px; color: white;"></i>
+                                <i class="ri-mail-fill"></i>
                                 <p class="contact_info mt-2"><strong>sales@myspatial.com.my</strong></p>
                             </div>
 
                             <!--===== Working Hour =====-->
                             <div class="col d-flex align-items-center mb-0 ml-5">
-                                <i class="ri-time-line" style="font-size: 30px; margin-right: 10px; margin-bottom: 0px; color: white;"></i>
+                                <i class="ri-time-line"></i>
                                 <p class="contact_info mt-2"><strong>Mon - Fri: 9:00 am - 6:00 pm</strong></p>
                             </div>
                         </div>
@@ -298,25 +299,25 @@
 
                 <!--========== company link ==========-->
                 <div class="link text-center">
-                    <div class="link_social" style="margin-bottom: 0px; margin-top: 0px; padding-top: 0px;">
+                    <div class="link_social">
                         <a href="https://www.facebook.com/myspatial/" target="_blank">
-                        <i class="ri-facebook-box-fill" style="color: white; font-size: 30px;"></i>
+                        <i class="ri-facebook-box-fill"></i>
                         </a>
 
                         <a href="https://x.com/myspatialsb/" target="_blank">
-                            <i class="ri-twitter-fill"  style="color: white; font-size: 30px;"></i>
+                            <i class="ri-twitter-fill"></i>
                         </a>
 
                         <a href="https://www.instagram.com/myspatial/" target="_blank">
-                        <i class="ri-instagram-fill"  style="color: white; font-size: 30px;"></i>
+                        <i class="ri-instagram-fill"></i>
                         </a>
 
                         <a href="https://my.linkedin.com/company/myspatial-sdn-bhd" target="_blank">
-                            <i class="ri-linkedin-fill"  style="color: white; font-size: 30px;"></i>
+                            <i class="ri-linkedin-fill"></i>
                         </a>
                     </div>
                     <div>
-                        <p class="copyrights" style="font-size: 12px; margin: 0;"><em>Copyright © 2024 MySpatial Sdn. Bhd. (872188-A) All Rights Reserved.</em></p>
+                        <p class="copyrights"><em>Copyright © 2024 MySpatial Sdn. Bhd. (872188-A) All Rights Reserved.</em></p>
                     </div>
                 </div>
             </div>
