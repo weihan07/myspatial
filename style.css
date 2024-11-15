@@ -35,6 +35,9 @@ html {
     transition: color 0.3s ease; /* Smooth transition for color change */
 }
 
+.dropdown-menu {
+    min-width: 100px !important; /* Ensure it doesn't shrink */
+}
 
 
 /*=============== HOME ===============*/
