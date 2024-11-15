@@ -35,8 +35,36 @@ html {
     transition: color 0.3s ease; /* Smooth transition for color change */
 }
 
+
+/*===== Drop down menu =====*/
+/* CSS for ensuring dropdown remains within the viewport */
 .dropdown-menu {
-    min-width: 100px !important; /* Ensure it doesn't shrink */
+    right: 0;
+    left: auto;
+    max-width: 90vw; /* Ensures the dropdown doesn’t exceed 90% of the viewport width */
+    overflow-wrap: break-word; /* Wraps text within the dropdown to prevent overflow */
+    background-color: #ff8c00; /* Darker orange background for the dropdown menu */
+}
+
+/* Styling for dropdown items */
+.dropdown-menu a.dropdown-item {
+    color: #ffffff; /* White text color for better contrast */
+    padding: 10px 20px;
+    white-space: normal; /* Allows text to wrap normally inside the dropdown items */
+    background-color: #ff8c00; /* Default background color */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover and active state styling */
+.dropdown-menu a.dropdown-item:hover,
+.dropdown-menu a.dropdown-item:focus {
+    background-color: #e67300; /* Deeper orange when hovered */
+    color: #ffffff; /* Keep text color white on hover */
+}
+
+.dropdown-menu a.dropdown-item:active {
+    background-color: #cc6600; /* Even deeper orange when actively clicked */
+    color: #ffffff; /* Keep text color white */
 }
 
 
