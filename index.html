@@ -81,7 +81,18 @@
                     <li class="nav-item"><a class="nav-link" href="#home"><strong>HOME</strong></a></li>
                     <li class="nav-item"><a class="nav-link" href="#project"><strong>PROJECT</strong></a></li>
                     <li class="nav-item"><a class="nav-link" href="#discover"><strong>DISCOVER</strong></a></li>
-                    <li class="nav-item"><button class="btn nav-link" onclick="window.location.href='https://thpegis.com.my'"><strong>DASHBOARD</strong></button></li>
+                    <li class="nav-item dropdown">
+                        <!-- Dropdown button -->
+                        <button class="btn btn-default dropdown-toggle nav-link" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <strong>DASHBOARD</strong>
+                        </button>
+                        <!-- Dropdown menu -->
+                        <div class="dropdown-menu" aria-labelledby="menu1">
+                            <a class="dropdown-item" href="https://myspatialgis.maps.arcgis.com/apps/dashboards/d9ce4807a462406fac1cce52aafb03d6" target="_blank">Aring</a>
+                            <a class="dropdown-item" href="#" target="_blank">Blau</a>
+                            <a class="dropdown-item" href="#" target="_blank">Gala</a>
+                        </div>
+                    </li>                
                 </ul>                    
             </div>
         </nav>
@@ -323,6 +334,12 @@
             </div>
         </footer>
 
+
+        <!-- Bootstrap JS (with jQuery and Popper.js) -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="script.js"></script> <!-- Link to your JavaScript file -->
 
         </body>
     </html>
